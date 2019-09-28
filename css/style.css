@@ -3,75 +3,59 @@
     padding: 0;
 }
 
-header {
+
+
+
+body {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/brewery.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
-}
-
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 40px;
-    padding: 0;
-    
-}
-
-.main-nav li {
-    display: inline-block;
-    
-}
-
-
-.main-nav li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 18x;
-    opacity: .9;
-    
-
-}
-
-
-
-.main-nav li:hover {
-    border: 1px solid white;
-}
-
-
-
-.logo img {
-    width: 200px;
-    height: auto;
-    float: left;
-    margin-top: 14px;
-}
-
-body {
     font-family: monospace;
 }
 
-.row {
-    max-width: 1200px;
-    margin: auto;
+.navbar-default {
+    background-color: transparent;
 }
 
-.hero-banner {
+nav .navbar-nav a {
+    color: white !important;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+}
+
+nav .navbar-nav ul:hover {
+    color: solid white;
+}
+
+.dropdown-menu a{
+    background-color: transparent;
+    color: black;
+}
+
+.hero-logo {
+    margin-top: 75px;
+    margin-left: 551px;
+    width: 375px;
+    height: 330px;
+   
+}
+
+
+/* .hero-banner {
     position: absolute;
     width: 1200px;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 100px;
 }
 
-h1 {
+.hero-banner h1 {
     color: gold;
     text-transform: uppercase;
     font-size: 200px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 0px;
     margin-left: 245px;
 
 }
@@ -81,23 +65,26 @@ h2 {
     font-size: 70px;
     text-align: center;
     margin-left: 245px;
-}
+} */
 
 .search-box {
     position: absolute;
+    margin-top: 60px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,150%);
+    transform: translate(-45.5%,160%);
     height: 40px;
-    padding: 10px;
+    padding: 25px;
     border-radius: 40px;
-    background: rgba(0,0,0,0.5);
-    padding: 10px;
+    background: rgba(0,0,0,0);
+    
 }
 
 .search-text {
+    position: relative;
+    font-size: 13px;
     height: 30px;
-    padding: 10px;
+    padding: 20px;
     border: none;
     border-radius: 25px;
     outline: none;
@@ -106,13 +93,16 @@ h2 {
 }
 
 .search-btn {
-    height: 50px;
-    width: 100px;
+    padding: 10px;
+    text-align: center;
+    height: 42px;
+    width: 140px;
     background: #ffeb3b;
     border: none;
     color: #000;
     border-radius: 25px;
     font-family: "Roboto", sans-serif;
+    font-size: 13px;
     opacity: .9;
 }
 
@@ -120,6 +110,5 @@ h2 {
     background: #ffc107;
     cursor: pointer;
 }
-
 
 
