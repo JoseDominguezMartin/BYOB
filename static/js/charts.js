@@ -9,7 +9,8 @@
       var bubbleLayout = {
         margin: { t: 0 },
         hovermode: "closest",
-        xaxis: { title: "OTU ID" }
+        xaxis: { title: "Categories" },
+        yaxis: { title: "Alcohol by Volume" }
       };
       var bubbleData = [
         {
@@ -36,12 +37,15 @@
           labels: otu_ids,
           hovertext: otu_labels,
           hoverinfo: "hovertext",
+          
           type: "pie"
         }
       ];
   
       var pieLayout = {
-        margin: { t: 0, l: 0 }
+        margin: { t: 0, l: 0 },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)'
       };
   
       Plotly.plot("pie", pieData, pieLayout);
@@ -75,5 +79,5 @@
   // }
   
   // Initialize the dashboard
-  buildCharts(data);
+  buildCharts();
   
