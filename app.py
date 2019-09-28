@@ -66,13 +66,18 @@ def sampleInfo():
 # Use Pandas to perform the sql query
     stmt = db.session.query(samples).statement
     df = pd.read_sql_query(stmt, db.session.bind)
+    
     data = {
         # donut will use beer category totals 
         "category_labels": df.categories.tolist(),
-        "category_totals": df.groupby(["categories"]).sum().tolist(),
+        "category_totals": df.groupby(["categories"])['name'].nunique().tolist(),
         "beer_name":df.name.tolist(),
         "abv": df.abv.tolist(),
+        "zip_code": df.code.tolist(),
+        "latitude": df.latitude.tolist(),
+        "longitude": df.longitude.tolist(),
         }
+    #data = df.groupby(["categories"])['name'].nunique().tolist()
     return jsonify(data)
 
     # print(df)
@@ -93,3 +98,4 @@ def about():
 if __name__ == "__main__":
     app.debug=True
     app.run()
+
