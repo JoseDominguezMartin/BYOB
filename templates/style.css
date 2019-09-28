@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/brewery.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    
+}
+
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18x;
+    opacity: .9;
+    
+
+}
+
+
+
+.main-nav li:hover {
+    border: 1px solid white;
+}
+
+
+
+.logo img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-top: 14px;
+}
+
+body {
+    font-family: monospace;
+}
+
+.row {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-banner {
+    position: absolute;
+    width: 1200px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+h1 {
+    color: gold;
+    text-transform: uppercase;
+    font-size: 200px;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 245px;
+
+}
+
+h2 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    margin-left: 245px;
+}
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,150%);
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.search-text {
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    width: 220px;
+    opacity: .9;
+}
+
+.search-btn {
+    height: 50px;
+    width: 100px;
+    background: #ffeb3b;
+    border: none;
+    color: #000;
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
+    opacity: .9;
+}
+
+.search-btn:hover {
+    background: #ffc107;
+    cursor: pointer;
+}
+
+
+
