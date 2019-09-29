@@ -51,9 +51,9 @@ def abv():
     # y= abv
     # bubbles will be the beer name
 
-@app.route("/brew-map")
+@app.route("/brewmap")
 def brewmap():
-    return render_template("brew-map.html")
+    return render_template("brewmap.html")
 
 # connected to index page
 
@@ -84,9 +84,9 @@ def sampleInfo():
     # return jsonify(stmt)
 
 
-@app.route("/brew-guide")
+@app.route("/brewguide")
 def brewguide():
-    return render_template("brew-guide.html")
+    return render_template("brewguide.html")
 
 
 @app.route("/about")
