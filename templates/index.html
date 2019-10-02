@@ -27,8 +27,11 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="{{ url_for( 'categories' ) }}">Categories</a>
-                    <a class="dropdown-item" href="{{ url_for( 'abv' ) }}">ABV</a>
+                    
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for( 'brewmap' ) }}">Brewery Map</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for( 'brewguide' ) }}">Brewery Guide</a>
@@ -36,23 +39,28 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for( 'about' ) }}">About Us</a>
                 </li>
+               
                 
                 </ul>
             </div>
         </nav>
 
     <!--END OF NAVBAR--->
-
+    <div><h1 style = "color: white; font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">Welcome to the Browse your own beer page!</h1>
+        <h3 style = "color: white; font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">Visit the 'Beer' tab for the beer category options and a list of beers</h3>
+        <h3 style = "color: white; font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">Visit the 'Beer-Map' tab for brewery locations</h3>
+        <h3 style = "color: white; font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">Visit the 'Beer-Guide' tab for a description of the beer types</h3></div>    
 
         <div class="content-container">
             <div class="hero-banner">
                 <img class="hero-logo" src="{{ url_for('static', filename='images/beerlogo2.png') }}">
             </div>
             
-            <div class="search-box">
+            <!-- <div class="search-box">
                 <input class="search-text" type="text"  name="" placeholder="ENTER ZIP">
                 <button class="search-btn" type="button">Find A Brewery</a>
-            </div>            
+            </div> 
+                   -->
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
