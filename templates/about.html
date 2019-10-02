@@ -20,7 +20,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ url_for( 'index' ) }}">Home<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Beer
                         </a>
@@ -28,12 +28,15 @@
                         <a class="dropdown-item" href="{{ url_for( 'categories' ) }}">Categories</a>
                         
                         </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for( 'categories' ) }}">Beer Categories</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for( 'brewmap' ) }}">Brewery Map</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for( 'brewguide' ) }}">Brewery Guide</a>
+                        <a class="nav-link" href="{{ url_for( 'brewguide' ) }}">Beer Guide</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for( 'about' ) }}">About Us</a>
