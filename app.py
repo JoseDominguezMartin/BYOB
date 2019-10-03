@@ -142,9 +142,8 @@ def beerInfo():
        res_dict["style"] = result[2]
        res_dict["abv"] = result[3]
        res_dict["brewery_name"] = result[4]
-       res_dict["zip_code"] = result[5]
-       res_dict["latitude"] = result[6]
-       res_dict["longitude"] = result[7]
+     
+      
        data.append(res_dict)
    print(data)
    #data = df.groupby(["categories"])['name'].nunique().tolist()
