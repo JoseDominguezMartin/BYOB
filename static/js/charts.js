@@ -9,8 +9,16 @@
       var bubbleLayout = {
         margin: { t: 0 },
         hovermode: "closest",
-        xaxis: { title: "Categories" },
-        yaxis: { title: "Alcohol by Volume" }
+        xaxis: {
+          title: "Categories",
+          color: "white",
+      },
+        yaxis: {
+          title: "Alcohol by Volume",
+          color: "white"
+        },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+       plot_bgcolor: 'rgba(0,0,0,0)'
       };
       var bubbleData = [
         {
@@ -20,7 +28,7 @@
           mode: "markers",
           marker: {
             size: abv,
-            color: otu_ids,
+            color: "gold",
             colorscale: "Earth"
           }
         }
@@ -51,7 +59,7 @@
       Plotly.plot("pie", pieData, pieLayout);
     });
   }
-  
+  buildCharts();
   // function init() {
   //   // Grab a reference to the dropdown select element
   //   var selector = d3.select("#selDataset");
@@ -79,5 +87,5 @@
   // }
   
   // Initialize the dashboard
-  buildCharts();
+  
   

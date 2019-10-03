@@ -39,8 +39,8 @@ nav .navbar-nav ul:hover {
 }
 
 .hero-logo {
-    margin-top: 75px;
-    margin-left: 551px;
+    margin-top: 8px;
+    margin-left: 450px;
     width: 375px;
     height: 330px;
    
@@ -116,3 +116,22 @@ h2 {
 }
 
 
+.item {
+    width: 1200px;
+    height: 100px;
+    margin: 50px auto;
+    padding-top: 50px;
+    background:transparent;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+
+td {
+    color: gold;
+ }
+
+ h3 {
+     text-align: center
+ }

@@ -76,6 +76,7 @@ def sampleInfo():
         "zip_code": df.code.tolist(),
         "latitude": df.latitude.tolist(),
         "longitude": df.longitude.tolist(),
+        "brewery_name": df.brewery_name.tolist(),
         }
     #data = df.groupby(["categories"])['name'].nunique().tolist()
     return jsonify(data)
@@ -126,6 +127,28 @@ def mapInfo():
 
     #data = df.groupby(["categories"])['name'].nunique().tolist()
     # return render_template("brew-map.html", data=data)
+
+@app.route("/beerinfo")
+def beerInfo():
+# Use Pandas to perform the sql query
+   # id,brewery_id,name,categories,style,abv,beer_description,brewery_name,address1,city,state,code,country,latitude,longitude
+   results = db.session.query(samples.name, samples.categories, samples.style, samples.abv, samples.brewery_name, samples.code, samples.latitude, samples.longitude).all()
+   # data = json.load(open(in_file))
+   data = []
+   for result in results:
+       res_dict = {}
+       res_dict["beer_name"] = result[0]
+       res_dict["category_labels"] = result[1]
+       res_dict["style"] = result[2]
+       res_dict["abv"] = result[3]
+       res_dict["brewery_name"] = result[4]
+       res_dict["zip_code"] = result[5]
+       res_dict["latitude"] = result[6]
+       res_dict["longitude"] = result[7]
+       data.append(res_dict)
+   print(data)
+   #data = df.groupby(["categories"])['name'].nunique().tolist()
+   return jsonify(data)
 
 @app.route("/metadata/mapinfo")
 def metaInfo():
