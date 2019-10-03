@@ -72,7 +72,31 @@
               </div>
               <button id="filter-btn" type="button" class="btn btn-default", style="color:rgb(153, 153, 127);">Filter Table</button>
             </form> -->
-            <select id="category-dropdown"></select>
+            <!-- <select id="category-dropdown"></select> -->
+            <div class="container">
+                    <div class="row margin-top-50">
+                      <div class="col-md-2">
+                        <aside class="filters">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">Filter Search</div>
+                            <div class="panel-body">
+                              <form>
+                                <div class="form-group">
+                                  <ul class="list-group" id="filters">
+                                    <li class="filter list-group-item">
+                                      <label for="date">Enter a Category</label>
+                                      <input class="form-control" id="category" type="text" placeholder="Category">
+                                    </li>
+                                  </ul>
+                                </div>
+                                <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                              </form>
+                            </div>
+                          </div>
+                        </aside>
+                      </div>
+                    </div>
+                  </div>
       </div>
       
 <div class="row">
@@ -91,8 +115,8 @@
            <th class="table-head", style="color:gold">Beer Name</th>
            <th class="table-head", style="color:gold">Brewery</th>
            <th class="table-head", style="color:gold">Category</th>
-          
            <th class="table-head", style="color:gold">Style</th>
+           <th class="table-head", style="color:gold">Zipcode</th>
     </tr>
   </thead>
   <tbody></tbody>
