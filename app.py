@@ -142,7 +142,7 @@ def beerInfo():
        res_dict["style"] = result[2]
        res_dict["abv"] = result[3]
        res_dict["brewery_name"] = result[4]
-       res_dict["zipcode"]=result[5]
+    #    res_dict["zipcode"]=result[5]
      
       
        data.append(res_dict)
